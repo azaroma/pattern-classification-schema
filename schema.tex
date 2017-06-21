@@ -1,0 +1,30 @@
+\documentclass{scrartcl}
+\usepackage{makecell}
+\usepackage{booktabs}
+
+\title{Pattern Classification Schema}
+
+\renewcommand\theadalign{cb}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+\begin{document}
+
+\begin{table}
+  \setlength{\extrarowheight}{2pt}
+  \begin{tabular}{l c c c}
+    & \thead{Architecture} & \thead{Design} & \thead{Idioms} \\ \bottomrule
+    \thead{From mud \\ to structure} & \makecell{Layers \\ Pipes and filters \\ Blackboard} & & \\ \bottomrule
+    \thead{Distributed \\ systems} & \makecell{Broker \\ Pipes and filters \\ Microkernel} & & \\ \bottomrule
+    \thead{Interactive \\ systems} & \makecell{MVC \\ PAC} & & \\ \bottomrule
+    \thead{Adaptable \\ systems} & \makecell{Microkernel \\ Reflection} & & \\ \bottomrule
+    \thead{Structural \\ Decomposition} & & \makecell{Whole-Part} & \\ \bottomrule
+    \thead{Organization \\ of work} & & \makecell{Master-Slave} & \\ \bottomrule
+    \thead{Access control} & & \makecell{Proxy} & \\ \bottomrule
+    \thead{Management} & & \makecell{Command-Processor \\ View-Handler} & \\ \bottomrule
+    \thead{Communication} & & \makecell{Publisher-Subscriber \\ Forwarder-Receiver \\ Client-Dispatcher-Server} & \\ \bottomrule
+    \thead{Resource \\ handling} & & & \makecell{Counted pointer} \\ \bottomrule
+  \end{tabular}
+\end{table}
+\end{document}
